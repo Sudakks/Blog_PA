@@ -1,0 +1,71 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+			  name: 'My PA record',
+			  nameLink: '/',
+			  search: 'auto',
+			  coverpage: true,
+			  loadSidebar: true,
+			  themeColor: '#67A195',
+              subMaxLevel: 2,
+			  loadNavbar: true,
+
+    search : [
+      '/',            // => /README.md
+      '/PA0',       // => /guide.md
+      '/PA1',      // => /zh-cn/README.md
+    ],
+
+
+    search: {
+      maxAge: 86400000,
+      paths: [],
+      placeholder: 'Type to search',
+
+
+      placeholder: {
+        '/': 'Type to search'
+      },
+
+      noData: 'No Results!',
+
+
+      noData: {
+        '/': 'No Results'
+      },
+
+      depth: 2,
+
+      hideOtherSidebarContent: false,
+
+
+      namespace: 'website-1',
+        pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+
+      // 您可以提供一个正则表达式来匹配前缀。在这种情况下，
+      // 匹配到的字符串将被用来识别索引
+      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+    }
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+  </body>
+</html>
+
