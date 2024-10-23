@@ -1,3 +1,3 @@
-- 实验时间：2022年秋季学期
+- Experiment Time：fall semester in 2022
 - ISA：riscv32
-- 记录下一些写PA的实验心得作为记录
+- record some experiences when working on PA
